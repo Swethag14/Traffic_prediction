@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Prediction</title>
+</head>
+<body>
+    <h1>Predict Traffic Situation</h1>
+    <form action="/predict" method="post">
+        <label for="Hour">Hour:</label>
+        <input type="number" name="Hour" required>
+        <br>
+        <label for="Date">Date (day of year):</label>
+        <input type="number" name="Date" required>
+        <br>
+        <label for="Day_of_the_week">Day of the week:</label>
+        <input type="number" name="Day_of_the_week" required>
+        <br>
+        <label for="CarCount">Car Count:</label>
+        <input type="number" name="CarCount" required>
+        <br>
+        <label for="BikeCount">Bike Count:</label>
+        <input type="number" name="BikeCount" required>
+        <br>
+        <label for="BusCount">Bus Count:</label>
+        <input type="number" name="BusCount" required>
+        <br>
+        <label for="TruckCount">Truck Count:</label>
+        <input type="number" name="TruckCount" required>
+        <br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
